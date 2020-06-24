@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="opening-header">
-        <img class="header-image" src="/imgs/opening-header.jpeg" alt="">
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="#opening-hours">Hours</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <h1 id="walnut-street">Walnut Street </h1>
-            <h2 id="barber-shop">Barber Shop</h2>
-            <p id="since-label"><i>Since 1943</i></p>
+    <section class="homepage">
+        <header class="opening-header">
+                <img class="header-image" src="/imgs/opening-header.jpeg" alt="">
+                <nav class="nav-bar">
+                    <ul class="nav-links">
+                        <li><a href="#opening-hours">Hours</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div data-scroll class="header-text">
+                    <h1 id="walnut-street">Walnut Street </h1>
+                    <h2 id="barber-shop">Barber Shop</h2>
+                    <p id="since-label"><i>Since 1943</i></p>
+            
+                </div>
+            </header>
+    </section>
     
-        </div>
-    </header>
-    <section class="about-section">
+    <section data-scroll class="about-section">
         <div class="about-container">
             <div id="opening-hours" class="opening-hours">
                 <h1 id="opening-hours-text"><u>Opening Hours</u></h1>
@@ -44,7 +47,7 @@
         </div>
     </section>
 
-    <section class="services-section">
+    <section data-scroll class="services-section">
         <h1 id="services" class="section-header">Services</h1>
          <div class="services-container">
              <h1>Haircuts..... $12</h1>
@@ -55,7 +58,7 @@
          </div>
     </section>
 
-    <section class="barber-section">
+    <section data-scroll class="barber-section">
         <h1 class="section-header">Our Barbers</h1>
         <div class="barber-cards">
             <div class="card">
@@ -96,6 +99,17 @@
                 
             </div>
     </header>
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+    ScrollOut({
+      threshold: .2,
+  once: true
+    }
+     
+    )
+    </script>
+
   
 </body>
 </html>
