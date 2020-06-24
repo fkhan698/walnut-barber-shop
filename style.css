@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Raleway&display=swap");
+
+:root{
+    --header-fonts: 'Montserrat', sans-serif;
+    --body-fonts: 'Montserrat', sans-serif;
+    --background-color: #594D4D;
+    --text-color: #FFF;
+    --section-header-size: 3em;
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    position: absolute;
+}
+.opening-header {
+ text-align: center;
+
+   
+    
+}
+.header-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+.nav-bar {
+
+    position: relative;
+    justify-content: center;
+    
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+ align-content: center;
+  margin-right: 40vh;
+
+}
+
+a {
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 300px;
+    font-family: var(--header-fonts);
+    font-size: 2rem;
+}
+
+.header-text {
+    position: relative;
+    text-align: center;
+    top: 170px; 
+   line-height: 4vh;
+    left: 0; 
+    bottom: 100px;
+    width: 100%; 
+    margin: 0;
+    color: var(--text-color);
+    
+}
+#walnut-street {
+    font-size: 96px;
+    font-family: var(--header-fonts);
+    font-weight: 100;
+    margin-bottom: 4rem;
+}
+#barber-shop {
+    font-size: 70px;
+    font-family: var(--body-fonts)
+}
+#since-label {
+    font-size: 3rem;
+    font-family: var(--body-fonts);
+}
+
+.about-section{
+    margin-top: 30em;
+    display: flex;
+    
+    
+}
+
+.about-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+
+.opening-hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    padding: 0 125px 0 125px;
+    margin: 6rem;
+    line-height: 1cm;
+    font-family: var(--body-fonts);
+    color: var(--text-color);
+    background-color: #403333;
+    font-size: 25px;
+    border-radius: 2%;
+    border-color: black;
+    min-height: 100px;
+}
+
+.learn-more-container {
+    display: flex;
+    font-family: var(--body-fonts);
+    flex-direction: column;
+    color: var(--text-color);
+
+   
+}
+#learn-more-h1 {
+    font-size: 2rem;
+    line-height: .5cm;
+    font-weight: 800;
+}
+.learn-more-button {
+    margin: 2em 0 3em 12em;
+    padding: 2rem;
+    width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3%;
+    font-size: 25px;
+    background-color: #B89F5D;
+    color: #FFF;
+    font-family: var(--body-fonts);
+}
+
+.haircut-img {
+    width: 100%;
+    height: 100%;
+  
+    border-style: solid;
+    position: relative;
+    border-radius: 2%;
+    border-color: black;
+}
+
+.section-header {
+    text-align: center;
+    font-size: var(--section-header-size);
+    font-family: var(--body-fonts);
+
+    color: #FFF;
+}
+
+.services-section {
+    margin-top: 3rem;
+    font-family: var(--body-fonts);
+}
+.services-container {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2%;
+    color: #FFF;
+    background-color: #403333;
+    font-size: 2em;
+    margin: 1rem 12rem 9rem 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* .appointment-button {
+    margin: 2em 0 3em 2em;
+    padding: 1rem;
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3%;
+    font-size: 30px;
+    background-color: #594D4D;
+    color: #FFF;
+    font-family: var(--body-fonts);
+} */
+
+
+.barber-cards{
+    margin: 6rem 2rem 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--body-fonts);
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barber-img{
+    width: 300px;
+    height: 85%;
+    margin-right: 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    border-color: black;
+}
+.closing-header {
+    margin-top: 5rem;
+
+}
+.closing-header-image {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+}
+.contact-container {
+    position: relative;
+    width: 40%; 
+    height: 500px;
+    text-align: center;
+    top: 250px;
+    left: 40px;
+    right: 100px;
+    padding: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2%;
+    background-color: #403333;
+}
+#find-us {
+    text-align: center;
+    font-size: 40px;
+}
+.contact-info {
+    color: var(--text-color);
+    font-family: var(--body-fonts);
+    font-size: 30px;
+    text-align: center;
+
+}
+.sm-link {
+    display: flex;
+    align-content: center;
+    font-size: 90px;
+    margin: 0.5em 0em 0em 2.5em;
+}
+
+
+
