@@ -6,25 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" rel="preload" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <section class="homepage">
         <header class="opening-header">
                 <img class="header-image" src="/imgs/opening-header.jpeg" alt="">
-                <nav class="nav-bar">
-                    <ul class="nav-links">
-                        <li><a href="#opening-hours">Hours</a></li>
+                <nav class="navbar">
+    
+                    <a href="#" class="toggle-button">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                      <ul>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#opening-hours">Hours</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                      </ul>
+                    </div>
+                  </nav>
+            
                 <div data-scroll class="header-text">
                     <h1 id="walnut-street">Walnut Street </h1>
                     <h2 id="barber-shop">Barber Shop</h2>
                     <p id="since-label"><i>Since 1943</i></p>
             
                 </div>
+                
             </header>
     </section>
     
@@ -42,27 +54,31 @@
                  <div class="img">
                     <img class="haircut-img" src="/imgs/haircut.jpeg" alt="">
                  </div>
-                 <button class="learn-more-button">More About Us</button>
+                 <button onclick="document.location= 'about.html'" class="learn-more-button">Learn More</button>
             </div>
         </div>
     </section>
 
-    <section data-scroll class="services-section">
-        <h1 id="services" class="section-header">Services</h1>
+    <section data-scroll id="services" class="services-section">
+        <!-- <h1 class="section-header">Services</h1> -->
          <div class="services-container">
-             <h1>Haircuts..... $12</h1>
-             <h1>Buzzcuts..... $10</h1>
-             <h1>Short Beard Trims..... $6</h1>
+             <h1>Haircuts...$12</h1>
+             <h1>Buzzcuts.....$10</h1>
+             <h1>Short Beard Trims...$6</h1>
              <h1>Long Beard Trims..... $10</h1>
              
          </div>
+         
     </section>
 
     <section data-scroll class="barber-section">
         <h1 class="section-header">Our Barbers</h1>
         <div class="barber-cards">
             <div class="card">
-                <img class="barber-img" src="/imgs/barber.jpeg" alt="">
+    
+                    <img class="barber-img" src="/imgs/barber.jpeg" alt="">
+                </a>
+                
                 <h1>Russell</h1>
                 <p>Tuesday-Saturday</p>
             </div>
@@ -72,7 +88,7 @@
                     <p>Wed, Thurs, Fri</p>
             </div>
             <div class="card">
-                    <img class="barber-img" src="/imgs/barber3.webp" alt="">
+                    <img class="barber-img" src="/imgs/barber2.jpeg" alt="">
                     <h1>Jim</h1>
                     <p>Tues, Thurs, Fri, Sat</p>
                     
@@ -93,22 +109,22 @@
                 <div id="contact" class="contact-info">
                     <h1 id="find-us"><u>Where to Find Us</u></h1>
                     <p><u>Address:</u> 205 E Walnut St Springfield, Missouri 65806 (next to Black Sheep)</p>
-                    <p><u>Call us:</u>(417) 831-3570</p>
+                    <p><u>Call us:</u> <p>(417) 831-3570</p></p>
                     <a class="sm-link" href="https://www.facebook.com/walnutstreetbarbershop/"><i class="fab fa-facebook-square"></i></a>
                 </div>
                 
             </div>
     </header>
 
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <script>
+    <script  src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!-- <script>
     ScrollOut({
       threshold: .2,
   once: true
     }
      
     )
-    </script>
+    </script> -->
 
   
 </body>

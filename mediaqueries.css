@@ -1,0 +1,210 @@
+
+
+@media all and (min-width: 1920px){
+    .about-container {
+        margin: 12rem 0em 0em 12em;
+    }
+    .barber-img {
+        width: 400px;
+    }
+    .services-container {
+        margin: 1rem 15rem 9rem 15rem;
+    }
+    .closing-header-image {
+        height: 100%;
+    }
+   
+    .learn-more-container {
+        margin-left: 10em;
+    }
+    .contact-info {
+        text-align: center;
+        
+    }
+}
+@media screen and (max-width: 1080px){
+  
+        .header-image {
+            height: 90%;
+        }
+        .about-container{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+        .barber-cards {
+            flex-direction: column;
+        }
+        .barber-img {
+            width: 400px;
+        }
+        .services-container{
+            padding: 7rem;
+        }
+     
+ 
+}
+
+@media screen and (max-width: 860px){
+    #walnut-street, #barber-shop, #since-label {
+        margin: 2rem;
+        line-height: 5rem;
+        
+    }
+    
+    @media (max-width: 800px) {
+        
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .toggle-button {
+         display: flex;
+     }
+ 
+     .navbar-links {
+         display: none;
+         width: 100%;
+     }
+ 
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+     }
+ 
+     .navbar-links ul li {
+         text-align: center;
+     }
+ 
+     .navbar-links ul li a {
+         padding: .5rem 1rem;
+     }
+ 
+     .navbar-links.active {
+         display: flex;
+     }
+ }
+    .opening-header {
+        margin: 0;
+        padding: 0;
+    }
+    .header-image {
+         width: 100%;
+         height: 900px;
+        padding: 0;
+    }
+    .opening-hours {
+        justify-content: center;
+        padding: 1rem;
+      margin: 0;
+    
+    }
+   
+    
+    .barber-cards{
+        flex-direction: column;
+    }
+    .haircut-img {
+        width: 100%;
+        height: 100%;
+
+      
+    }
+   #learn-more-h1 {
+       font-size: 25px;
+       line-height: 1.5rem;
+   }
+   .learn-more-container{
+       margin: 0;
+   }
+    .learn-more-button {
+      margin-left: 1rem;
+      
+      
+    }
+    .services-container {
+        display: flex;
+     justify-content: center;
+     align-content: center;
+        padding: 0rem 8rem 0rem 8rem;
+        font-size: 15px;
+        text-align: left;
+        
+    }
+    .barber-image {
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        top: 100px;
+    
+    }
+    .contact-info {
+        font-size: 20px;
+    }
+    .closing-header-image {
+        width: 100%;
+        height: 100%;
+    }
+   
+   
+   
+    .sm-link {
+        display: flex;
+        font-size: 4rem;
+        margin-right: 5rem;
+     
+    }
+    #find-us {
+        font-size: 1.5rem;
+    }
+     
+    @media screen and (max-width: 630px){
+        #walnut-street, #barber-shop {
+            font-size: 5rem;
+            
+        }
+      
+      
+        .services-section {
+           display: flex;
+           justify-content: center;
+          align-content: center;
+          
+         
+        }
+    
+      .services-container {
+        padding: 5rem;
+        font-size: 16px;
+      }
+        .barber-cards{
+           margin-left: 4rem;
+        }
+        .barber-img{
+            width: 60%;
+            height: 100%;
+        }
+        .learn-more-button {
+            padding: 1.5rem;
+            
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 25px;
+        }
+        .sm-link {
+            margin-left: 9rem;
+        }
+        #number{
+            font-size: 10px;
+        }
+    }
+ 
