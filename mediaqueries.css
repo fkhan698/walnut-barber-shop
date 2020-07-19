@@ -57,6 +57,7 @@
      .navbar {
          flex-direction: column;
          align-items: flex-start;
+         left: 0;
      }
  
      .toggle-button {
@@ -79,25 +80,27 @@
  
      .navbar-links ul li a {
          padding: .5rem 1rem;
+         
      }
  
      .navbar-links.active {
          display: flex;
+        
      }
  }
     .opening-header {
         margin: 0;
         padding: 0;
     }
-    .header-image {
-         width: 100%;
-         height: 900px;
-        padding: 0;
+    .headerImg2{
+        background-attachment: scroll;
+        background-position: right;
+    
     }
     .opening-hours {
         justify-content: center;
         padding: 1rem;
-      margin: 0;
+      margin: 0rem auto 2rem;
     
     }
    
@@ -113,13 +116,13 @@
     }
    #learn-more-h1 {
        font-size: 25px;
-       line-height: 1.5rem;
+       line-height: 2rem;
    }
    .learn-more-container{
        margin: 0;
    }
     .learn-more-button {
-      margin-left: 1rem;
+      margin: 2rem auto;
       
       
     }
@@ -127,14 +130,15 @@
         display: flex;
      justify-content: center;
      align-content: center;
-        padding: 0rem 8rem 0rem 8rem;
-        font-size: 15px;
+        margin: 2rem 5rem 2rem 5rem;
+        padding: 0rem, 9rem;
+        font-size: 20px;
         text-align: left;
         
     }
-    .barber-image {
-        width: 100%;
-        height: 100%;
+    .barber-img {
+        width: 60%;
+        height: 250px;
     }
  
     .contact-container {
@@ -151,60 +155,21 @@
     }
     .closing-header-image {
         width: 100%;
-        height: 100%;
+        height: 90%;
     }
    
    
    
     .sm-link {
-        display: flex;
         font-size: 4rem;
-        margin-right: 5rem;
-     
     }
     #find-us {
         font-size: 1.5rem;
     }
+    .about-paragraph {
+        margin: 5rem;
+    }
      
-    @media screen and (max-width: 630px){
-        #walnut-street, #barber-shop {
-            font-size: 5rem;
-            
-        }
-      
-      
-        .services-section {
-           display: flex;
-           justify-content: center;
-          align-content: center;
-          
-         
-        }
     
-      .services-container {
-        padding: 5rem;
-        font-size: 16px;
-      }
-        .barber-cards{
-           margin-left: 4rem;
-        }
-        .barber-img{
-            width: 60%;
-            height: 100%;
-        }
-        .learn-more-button {
-            padding: 1.5rem;
-            
-        }
-        .contact-info {
-            text-align: center;
-            font-size: 25px;
-        }
-        .sm-link {
-            margin-left: 9rem;
-        }
-        #number{
-            font-size: 10px;
-        }
     }
  
