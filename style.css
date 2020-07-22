@@ -75,6 +75,22 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 18%;
 }
 
+.logo {
+
+
+/* logo 1 */
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 284px;
+top: 0;
+background: url('./imgs/logo.png');
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
 .navbar {
     display: flex;
     position: absolute;
@@ -96,6 +112,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     margin-bottom: 1rem;
     padding: 0;
+   
 
 }
 
@@ -104,8 +121,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar-links li a {
-    display: block;
+    
     text-decoration: none;
+    flex-direction: row;
     color: white;
     padding: 1rem;
     
@@ -161,7 +179,7 @@ a {
     
 }
 #since-label {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: var(--body-fonts);
     letter-spacing: 2px;
 }
@@ -187,8 +205,8 @@ a {
     flex-direction: column;
     justify-content: center;
     border-style: solid;
-    padding: 0 125px 0 125px;
-    margin: 6rem;
+    padding: 10px 125px 0 125px;
+    margin: 3rem;
     line-height: 1cm;
     font-family: var(--body-fonts);
     color: var(--text-color);
@@ -213,6 +231,7 @@ a {
 #learn-more-h1 {
     font-size: 2rem;
     font-weight: 800;
+    margin-bottom: 1rem;
 }
 .learn-more-button {
     margin: 2em 0 3em 12em;
@@ -254,6 +273,9 @@ a {
     margin-top: 3rem;
     font-family: var(--body-fonts);
 }
+.service {
+    margin-top: 1rem;
+}
 .services-container {
     border-style: var(--border-style);
     border-color: var(--border-color);
@@ -262,15 +284,19 @@ a {
     color: #FFF;
     padding: 5rem;
     background-color: #403333;
+    align-items: center;
     font-size: 2em;
     margin: 1rem 13rem 9rem 13rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    
+
     flex-direction: column;
     box-shadow: var(--box-shadow);
 }
-
+.service-detail {
+    font-size: 15px;
+}
 /* .appointment-button {
     margin: 2em 0 3em 2em;
     padding: 1rem;
@@ -331,9 +357,10 @@ a {
 .contact-container {
     position: relative;
     width: 45%; 
-    height: 500px;
+    height: 550px;
     text-align: center;
-    top: 10px;
+   
+    bottom: 100px;
     left: 40px;
     right: 200px;
     padding: 1em;
@@ -351,13 +378,22 @@ a {
     font-family: var(--body-fonts);
     font-size: 30px;
     text-align: center;
-
 }
+#directions {
+    cursor: pointer;
+}
+
 .sm-link {
     display: block;
-    margin: 0 auto;
-    align-content: center;
+    
+    
     font-size: 90px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
 }
 
 
@@ -370,6 +406,8 @@ a {
     margin: 5rem 12rem 0rem 12rem; 
     font-size: 2rem;
     line-height: 2.5rem;
+    text-indent: 5rem;
+    margin-bottom: 5rem;
 }
 
 
