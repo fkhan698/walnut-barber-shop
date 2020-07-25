@@ -1,6 +1,27 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav li');
+    
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-})
+
+    burger.addEventListener('click', () => {
+            //toggle nav
+        nav.classList.toggle('nav-active');
+
+            //Animate links
+    navLinks.forEach((link, index)=>{
+        if(link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = `navFade 0.5s easy forwards ${index / 7 + 1.5}s`;
+        }
+        });
+        //Burger animation
+        burger.classList.toggle('toggle');
+
+    });
+
+}
+
+navSlide();
