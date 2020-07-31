@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" rel="preload" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <script defer src="app.js"></script>
@@ -13,28 +14,29 @@
 <body>
     <section class="homepage">
         <header class="opening-header">
-            <nav class="navbar">
-       
-                <ul class="nav">
-                    <li>
-                        <a href="#hours">Hours</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                   
-                    </li>
-        
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!-- <a class="navbar-brand"><img src="./imgs/logo-brand.png" alt=""></a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                           <ul class="navbar-nav ml-auto mr-5" >
+                              <li class="nav-item active">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#hours">Hours </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#services">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#contact">Contact</a>
+                              </li>
+                             
+                         
+                           </ul>
+                           
+                        </div>
+                     </nav>
                 <div class="headerImg2">
                    
                         <div data-scroll class="header-text">
@@ -60,7 +62,7 @@
                  <h1 id="learn-more-h1">Come See What the Buzz is About!</h1>
                  
                  <div class="img">
-                    <img class="haircut-img" src="/imgs/haircut.JPEG" alt="">
+                    <img class="haircut-img" src="/imgs/barber-card-min.jpeg" alt="">
                  </div>
                  <button onclick="document.location= 'about.html'" class="learn-more-button">Learn More</button>
             </div>
@@ -71,8 +73,8 @@
         <h1 class="section-header">Services</h1>
          <div class="services-container">
              <h1 class="service">Haircuts...$12</h1>
-             <h1 class="service">Buzzcuts...$10 <div class="service-detail">(hair cut to 1/2 or less all over, with tapered bottom does not include fades, high-n-tights or flat tops)</div></h1>
-             <h1 class="service">Short Beard Trims <div class="service-detail">(Beard trimmed longer than 1/2 inch)</div>$6</h1>
+             <h1 class="service">Buzzcuts...$10 <div class="service-detail">(hair cut to 1/2 or less all over, with tapered bottom)</div></h1>
+             <h1 class="service">Short Beard Trims <div class="service-detail">(Beard trimmed shorter than 1/2 inch)</div>$6</h1>
              <h1 class="service">Long Beard Trims <div class="service-detail">(Beard trimmed longer than 1/2 inch)</div>$10</h1>
              <div >
                 <h1 class="service">* Cash Only</h1>
@@ -81,33 +83,29 @@
          
     </section>
 
-    <section data-scroll class="barber-section">
+    <section class="barber-section">
         <h1 class="section-header">Our Barbers</h1>
         <div class="barber-cards">
-            <div class="card">
+            <div class="barber-card">
     
-                    <img class="barber-img" src="/imgs/barber.jpeg" alt="">
+                    <img class="barber-img" src="/imgs/Russ-headshot-min.png" alt="">
                 </a>
                 
                 <h1>Russell</h1>
                 <p>Tuesday-Saturday</p>
             </div>
-            <div class="card">
-                    <img class="barber-img" src="/imgs/barber2.jpeg" alt="">
+            <div class="barber-card">
+                    <img class="barber-img" src="/imgs/Russ-headshot-min.png" alt="">
                     <h1>Amy</h1>
                     <p>Wed, Thurs, Fri</p>
             </div>
-            <div class="card">
-                    <img class="barber-img" src="/imgs/jim.jpg" alt="">
+            <div class="barber-card">
+                    <img class="barber-img" src="/imgs/jim-min.jpg" alt="">
                     <h1>Jim</h1>
                     <p>Tues, Thurs, Fri, Sat</p>
                     
             </div>
-            <div class="card">
-                    <img class="barber-img" src="/imgs/barber4.jpeg" alt="">
-                    <h1>Sean</h1>
-                    <p>Tues, Wed, Sat</p>
-            </div>
+            
             
     
         </div>
@@ -130,14 +128,11 @@
             </div>
     </header>
     <footer>
-        <p>205 E Walnut St Springfield, Missouri 65806 | </p>
+        <p><a id="directions" href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x87cf630246d0e6f9:0xc36a60dcfac01a96!2m2!1d-93.2920469!2d37.2072403!3e0?hl=en&authuser=0">205 E Walnut St Springfield, Missouri 65806 </a>| </p>
         <p>(417) 831-3570 | </p>
-       <p>Site developed by<a href="faizanzkhan.com">   Faizan Khan</a></p>
+       <p>Site developed by<a href="http://www.faizanzkhan.com">   Faizan Khan</a></p>
     </footer>
-
-
-  
-
-  
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
 </html>
