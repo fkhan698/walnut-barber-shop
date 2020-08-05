@@ -4,14 +4,16 @@
     .about-container {
         margin: 12rem 0em 0em 12em;
     }
-    .barber-img {
-        width: 400px;
-    }
+   
     .services-container {
         margin: 1rem 15rem 9rem 15rem;
     }
     .closing-header-image {
         height: 100%;
+    }
+    .barber-img {
+        width: 350px;
+        height: 500px;
     }
    
     .learn-more-container {
@@ -20,6 +22,10 @@
     .contact-info {
         text-align: center;
         
+    }
+    .barber-cards{
+        justify-content: space-evenly;
+       
     }
 }
 @media screen and (max-width: 1080px){
@@ -197,7 +203,7 @@
     }
     .barber-img {
         width: 50%;
-        height: 70%;
+        height: 10%;
     }
  
     .contact-container {
@@ -227,6 +233,7 @@
     }
     .about-paragraph {
         margin: 1rem;
+        font-size: 15px;
     }
     .award-cards {
         margin: 0;
