@@ -192,7 +192,7 @@ a:hover {
   font-family: var(--body-fonts);
   color: var(--text-color);
   background-color: #403333;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 2%;
   border-width: var(--border-width);
   border-color: var(--border-color);
