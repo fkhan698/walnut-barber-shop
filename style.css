@@ -7,9 +7,9 @@
   --background-color: #594d4d;
   --text-color: #fff;
   --section-header-size: 3em;
-  --border-width: 1px;
+  --border-width: 0px;
   --border-style: solid;
-  --border-color: black;
+  --border-color: rgba(0, 0, 0, 0.5);
   --box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   --load-time: 750ms;
 }
@@ -253,7 +253,7 @@ a:hover {
 }
 
 .services-section {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: var(--body-fonts);
 }
 .service {
@@ -265,7 +265,7 @@ a:hover {
   border-width: var(--border-width);
   border-radius: 2%;
   color: #fff;
-  padding: 5rem;
+  padding: 8rem;
   background-color: #403333;
   align-items: center;
   font-size: 2em;
@@ -276,8 +276,15 @@ a:hover {
   flex-direction: column;
   box-shadow: var(--box-shadow);
 }
+
+.service-header {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
 .service-detail {
-  font-size: 15px;
+  display: flex;
+  font-size: 20px;
+  inline-size: 500px;
 }
 .appointment-button {
   margin-top: 1rem;

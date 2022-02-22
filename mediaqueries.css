@@ -1,278 +1,273 @@
+@media all and (min-width: 1920px) {
+  .about-container {
+    margin: 12rem 0em 0em 12em;
+  }
 
+  .services-container {
+    margin: 1rem 15rem 9rem 15rem;
+  }
+  .closing-header-image {
+    height: 100%;
+  }
+  .barber-img {
+    width: 350px;
+    height: 500px;
+  }
 
-@media all and (min-width: 1920px){
-    .about-container {
-        margin: 12rem 0em 0em 12em;
-    }
-   
-    .services-container {
-        margin: 1rem 15rem 9rem 15rem;
-    }
-    .closing-header-image {
-        height: 100%;
-    }
-    .barber-img {
-        width: 350px;
-        height: 500px;
-    }
-   
-    .learn-more-container {
-        margin-left: 10em;
-    }
-    .contact-info {
-        text-align: center;
-        
-    }
-    .barber-cards{
-        justify-content: space-evenly;
-       
-    }
+  .learn-more-container {
+    margin-left: 10em;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .barber-cards {
+    justify-content: space-evenly;
+  }
 }
-@media screen and (max-width: 1080px){
-    .navbar-brand {
-        display: none;
-    }
-    .header-text {
-        margin-top: 1rem;
-    }
-    #walnut-street, #barber-shop, #since-label {
-        margin: 3rem;
-        line-height: 5rem;
-    }
-        .header-image {
-            height: 90%;
-        }
-        .about-container{
-        margin: 0;
-        flex-direction: column;
-      
-        align-items: center;
-      
-    }
-    .haircut-img {
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
+@media screen and (max-width: 1080px) {
+  .navbar-brand {
+    display: none;
+  }
+  .header-text {
+    margin-top: 1rem;
+  }
+  #walnut-street,
+  #barber-shop,
+  #since-label {
+    margin: 3rem;
+    line-height: 5rem;
+  }
+  .header-image {
+    height: 90%;
+  }
+  .about-container {
+    margin: 0;
+    flex-direction: column;
 
-    }
-        .barber-cards {
-            flex-direction: column;
-        }
-        .barber-img {
-            width: 35%;
-            height: 450px;
-
-        }
-        .services-container{
-            padding: 7rem;
-        }
-        .contact-container {
-            top: 3em;
-            padding: 2em;
-        }
-     
- 
+    align-items: center;
+  }
+  .haircut-img {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .barber-cards {
+    flex-direction: column;
+  }
+  .barber-img {
+    width: 35%;
+    height: 450px;
+  }
+  .services-container {
+    padding: 7rem;
+  }
+  .contact-container {
+    top: 3em;
+    padding: 2em;
+  }
 }
 
-@media screen and (max-width: 860px){
-   
-    .header-text {
-        margin-top: 4rem;
-    }
-    #walnut-street, #barber-shop, #since-label {
-        margin: 0rem;
-        line-height: 5rem;
-    }
-    #since-label {
-        font-size: 25px;
-    }
-    
-    @media screen and (max-width: 800px) {
-        
-        body, html{
-          overflow-x: hidden;
-        }
-       
-        .nav{
-            
-            position: absolute;
-            right: 0px;
-            height: 60vh;
-            top: 4vh;
-            
-            background-color: #594D4D;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 60%;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-            z-index: 99;
-        }
-        .nav li{
-            opacity: 1;
-            top: 0;
-        }
-        .burger{
-            display: block;
-        }
-    
-    }
-    
-    .nav-active{
-        transform: translateX(0%);
-        min-height: 0;
-    }
-    
-    @keyframes navFade{
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-    
-    .toggle .line1{
-        transform: rotate(-45deg) translate(-5px,6px);
-    }
-    .toggle .line2{
-        opacity: 0;
-    }
-    .toggle .line3{
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-    .opening-header {
-        margin: 0;
-        padding: 0;
-    }
-    .headerImg2{
-        background-attachment: scroll;
-        background-position: center;
-        height: 100%;
-        width: 100%;
-    
-    }
-    
-    .opening-hours {
-        justify-content: center;
-        padding: 1rem;
-      margin: 2rem 1rem;
-    
-    }
-   
-    
-    .barber-cards{
-        flex-direction: column;
-    }
-   
-    .haircut-img {
-        width: 100%;
-        height: 90%;
-        margin: 2;
-        
+@media screen and (max-width: 860px) {
+  .header-text {
+    margin-top: 4rem;
+  }
+  #walnut-street,
+  #barber-shop,
+  #since-label {
+    margin: 0rem;
+    line-height: 5rem;
+  }
+  #since-label {
+    font-size: 25px;
+  }
 
-      
-    }
-   #learn-more-h1 {
-       font-size: 25px;
-       line-height: 2rem;
-   }
-   .learn-more-container{
-       width: 90%;
-       display: block !important;
-       margin: 0 auto !important;
-   }
-    .learn-more-button {
-        display: block;
-      margin: 2rem auto;
-      
-      
-    }
-    .services-container {
-        display: flex;
-     justify-content: center;
-     align-content: center;
-        margin: 2rem 1rem 2rem 1rem;
-       
-        font-size: 25px;
-        text-align: center;
-        
-    }
-    .barber-img {
-        width: 50%;
-        height: 10%;
-    }
- 
-    .contact-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 80%;
-        top: 50px;
-    
-    }
-    .contact-info {
-        font-size: 20px;
-    }
-    .closing-header-image {
-        width: 100%;
-        height: 90%;
-    }
-   
-   
-   
-    .sm-link {
-        font-size: 4rem;
-    }
-    #find-us {
-        font-size: 1.5rem;
-    }
-    .about-paragraph {
-        margin: 1rem;
-        font-size: 15px;
-    }
-    .award-cards {
-        margin: 0;
-        flex-direction: column;
-        
-    }
-    .award-card {
-        margin: 2rem;
-
-    }
-    .award-img {
-        width: 50%;
-        height: 50%;
-    }
-    footer {
-        flex-direction: column;
-        margin: 5rem;
-    }
-     
-    
-    }
- 
-
-@media screen and (max-width: 400px){
-    .header-text {
-        margin-top: 2rem;
-    }
-    #walnut-street, #barber-shop {
-        margin: 0;
-       font-size: 60px;
-    } 
-    #since-label {
-        font-size: 20px;
+  @media screen and (max-width: 800px) {
+    body,
+    html {
+      overflow-x: hidden;
     }
 
-    .contact-container {
-        top: 0px;
+    .nav {
+      position: absolute;
+      right: 0px;
+      height: 60vh;
+      top: 4vh;
+
+      background-color: #594d4d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      z-index: 99;
     }
-    footer {
-        margin-top: 5rem;
+    .nav li {
+      opacity: 1;
+      top: 0;
     }
+    .burger {
+      display: block;
+    }
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    min-height: 0;
+  }
+
+  @keyframes navFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .opening-header {
+    margin: 0;
+    padding: 0;
+  }
+  .headerImg2 {
+    background-attachment: scroll;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .opening-hours {
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .barber-cards {
+    flex-direction: column;
+  }
+
+  .haircut-img {
+    width: 100%;
+    height: 90%;
+    margin: 2;
+  }
+  #learn-more-h1 {
+    font-size: 25px;
+    line-height: 2rem;
+  }
+  .learn-more-container {
+    width: 90%;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  .learn-more-button {
+    display: block;
+    margin: 2rem auto;
+  }
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem 1rem 2rem 1rem;
+
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .service {
+    font-size: 2rem;
+  }
+
+  .service-header {
+    font-size: 3.5rem;
+  }
+  .service-detail {
+    inline-size: 200px;
+  }
+  .barber-img {
+    width: 50%;
+    height: 10%;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    top: 50px;
+  }
+  .contact-info {
+    font-size: 20px;
+  }
+  .closing-header-image {
+    width: 100%;
+    height: 90%;
+  }
+
+  .sm-link {
+    font-size: 4rem;
+  }
+  #find-us {
+    font-size: 1.5rem;
+  }
+  .about-paragraph {
+    margin: 1rem;
+    font-size: 15px;
+  }
+  .award-cards {
+    margin: 0;
+    flex-direction: column;
+  }
+  .award-card {
+    margin: 2rem;
+  }
+  .award-img {
+    width: 50%;
+    height: 50%;
+  }
+  footer {
+    flex-direction: column;
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-text {
+    margin-top: 2rem;
+  }
+
+  #walnut-street,
+  #barber-shop {
+    margin: 0;
+    font-size: 60px;
+  }
+  #since-label {
+    font-size: 20px;
+  }
+
+  .contact-container {
+    top: 0px;
+  }
+
+  .service-header {
+    font-size: 3.5rem;
+  }
+  .service-detail {
+    inline-size: 200px;
+  }
+  footer {
+    margin-top: 5rem;
+  }
 }
