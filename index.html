@@ -1,162 +1,538 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Walnut Street Barber Shop located on 205 E Walnut St Springfield, Missouri 65806">
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Walnut Street Barber</title>
-    <link rel="canonical" href="https://walnutstreetbarber.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <section class="homepage">
-        <header class="opening-header">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <!-- <a class="navbar-brand"><img src="./imgs/logo-brand.png" alt=""></a> -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                           <ul class="navbar-nav ml-auto mr-5" >
-                              <li class="nav-item active">
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#hours">Hours </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#services">Services</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#contact">Contact</a>
-                              </li>
-                             
-                         
-                           </ul>
-                           
-                        </div>
-                     </nav>
-                <div class="headerImg2">
-                   
-                        <div data-scroll class="header-text">
-                            <h1 id="walnut-street">Walnut Street </h1>
-                            <h2 id="barber-shop">Barber Shop</h2>
-                            <p id="since-label"><i>In Downtown Springfield Since 1943</i></p>
-                        </div>
-               
-                        
-                </div>
-            </header>
-    </section>
-    
-    <section data-scroll class="about-section">
-        <div class="about-container">
-            <div id="hours" class="opening-hours">
-                <h1 id="opening-hours-text"><u>Hours</u></h1>
-                <p>Tuesday-Friday (7:30am-5:00pm)</p>
-                <p>Saturday (7:30am-12:00pm)</p>
-                <p>Sunday-Monday(CLOSED)</p>
-                <h3>*Walk-Ins Only</h3>
-            </div>
-            <div class="learn-more-container">
-                 <h1 id="learn-more-h1">Come See What the Buzz is About!</h1>
-                 
-                 <div class="img">
-                    <img class="haircut-img" src="https://raw.githubusercontent.com/fkhan698/walnut-barber-shop/master/imgs/barber-card-min.jpg" alt ="Barber Card">
-                 </div>
-                 <button onclick="document.location= 'about.html'" class="learn-more-button">Learn More</button>
-            </div>
-        </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Walnut Street Barber Shop | Downtown Springfield, MO Since 1943
+    </title>
+    <meta
+      name="description"
+      content="Walnut Street Barber Shop has been cutting hair in downtown Springfield, Missouri since 1943. Walk-ins welcome for haircuts, fades &amp; beard trims. Cash only."
+    />
+    <link rel="canonical" href="https://walnutstreetbarber.com/" />
 
-    <section data-scroll id="services" class="services-section">
-        <h1 class="section-header">Services</h1>
-         <div class="services-container">
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Walnut Street Barber Shop" />
+    <meta
+      property="og:title"
+      content="Walnut Street Barber Shop | Downtown Springfield, MO Since 1943"
+    />
+    <meta
+      property="og:description"
+      content="A downtown Springfield barbershop tradition since 1943. Walk-ins welcome for haircuts, fades &amp; beard trims."
+    />
+    <meta
+      property="og:image"
+      content="https://walnutstreetbarber.com/imgs/og-share.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://walnutstreetbarber.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Walnut Street Barber Shop | Downtown Springfield, MO"
+    />
+    <meta
+      name="twitter:description"
+      content="A downtown Springfield barbershop tradition since 1943. Walk-ins welcome."
+    />
+    <meta
+      name="twitter:image"
+      content="https://walnutstreetbarber.com/imgs/og-share.jpg"
+    />
 
-            <div class="service-header"><u>Haircuts</u></div>
+    <meta name="theme-color" content="#241b17" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23241b17'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23c39a5b' font-family='Georgia,serif'%3EW%3C/text%3E%3C/svg%3E"
+    />
 
-             <h1 class="service"> <strong>Buzzcuts - $10</strong></h1>
-             <div class="service-detail"><p>Hair trimmed to 3/8 inch or less all over with clippers, includes tapering around neck and ears. Does not include fades, high-in-tights, "leave the top alone" cuts, undercuts or flat tops.</p></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="imgs/hero-shop.webp"
+      imagesrcset="imgs/hero-shop-800.webp 800w, imgs/hero-shop-1200.webp 1200w, imgs/hero-shop.webp 2400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-             <h1 class="service"> <strong>Regular Cut - $15</strong></h1>
-             <div class="service-detail">Clipper cut on sides and back.   Clipper or shear cutting of the top.  Top lengths of 4 inches or less</div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Walnut Street Barber Shop",
+        "image": "https://walnutstreetbarber.com/imgs/og-share.jpg",
+        "url": "https://walnutstreetbarber.com/",
+        "telephone": "+1-417-831-3570",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "205 E Walnut St",
+          "addressLocality": "Springfield",
+          "addressRegion": "MO",
+          "postalCode": "65806",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.2072403,
+          "longitude": -93.2920469
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "07:30",
+            "closes": "12:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/walnutstreetbarbershop/",
+          "https://www.instagram.com/walnutstreetbarbershop/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <h1 class="service"><strong>Fade - $17.00</strong> </h1>
-             <div class="service-detail">Standard, low, medium, or high zero fades.  Top hair lengths of 4 inches or less. Does not include Mohawk or Faux Hawk fades.</div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <span class="brand-main">Walnut Street</span>
+          <span class="brand-sub">Barber Shop</span>
+        </a>
 
-              <h1 class="service"><strong>Specialty Cut - $19.00</strong> </h1>
-             <div class="service-detail">To include (but not limited to): Top lengths over 4 inches, side and back hair lengths over 1 inch, Mohawks, Faux Hawks, specialty mullets & drastic fades.   For these cuts, any combination of clipper and/or shear cutting
-will be used, at the barber’s discretion.
-            </div>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
 
-            <h1 class="service-header"><u>Beard Trims</u></h1>
-
-             <h1 class="service"> <strong>Short Beard/Goatee Trims - $6.00</strong></h1>
-             <div class="service-detail"><p>Freshening up of the jaw line, neckline and overall shape of beard/goatee and mustache. Maintaining already established shape. Overall length is no greater than 3/8 inch.</p></div>
-            
-               <h1 class="service"> <strong>Long Beard/Goatee Trims - $10.00</strong></h1>
-             <div class="service-detail"><p>Shaping of long beard/goatee and mustache. Establishing a jawline, neckline and mustache.  With parts greater than 3/8 inch. Specialty shaping.</p></div>
-
-             <div >
-                <h1 class="service">* Cash Only</h1>
-             </div>
-         </div>
-         
-    </section>
-
-    <section class="barber-section">
-        <h1 class="section-header">Our Barbers</h1>
-        <div class="barber-cards">
-            <div class="barber-card">
-    
-                    <img class="barber-img" src="https://raw.githubusercontent.com/fkhan698/walnut-barber-shop/master/imgs/Russ-headshot.png" alt="Russell">
-                </a>
-                
-                <h1>Russell</h1>
-                <p>Tuesday - Sat</p>
-            </div>
-            <div class="barber-card">
-                    <img class="barber-img" src="https://raw.githubusercontent.com/fkhan698/walnut-barber-shop/master/imgs/amy-min.jpg" alt="Amy">
-                    <h1>Amy</h1>
-                    <p>Tuesday - Sat</p>
-            </div>
-            <div class="barber-card">
-                    <img class="barber-img" src="./imgs/jim-min.jpg" alt="Jim">
-                    <h1>Jim</h1>
-                    <p>Tuesday - Sat</p>
-                    
-            </div>
-            
-            
-    
-        </div>
-    </section>
-    
-    <header class="closing-header">
-            <div class="contact-container">
-                <div id="contact" class="contact-info">
-                    <h1 id="find-us"><u>Where to Find Us</u></h1>
-                    <p> <a id="directions" href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x87cf630246d0e6f9:0xc36a60dcfac01a96!2m2!1d-93.2920469!2d37.2072403!3e0?hl=en&authuser=0">205 E Walnut St Springfield, Missouri 65806 (At Corner of Walnut and South)</a></p>
-                
-                    <p><u>Contact Us:</u> <p>(417) 831-3570</p></p>
-                    <div class="social-media">
-                        <a class="sm-link" href="https://www.facebook.com/walnutstreetbarbershop/"><i class="fab fa-facebook-square"></i></a>
-                        <a class="sm-link" href="https://www.instagram.com/walnutstreetbarbershop/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    
-                </div>
-                
-            </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#barbers">Barbers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
-    <footer>
-        <p><a id="directions" href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x87cf630246d0e6f9:0xc36a60dcfac01a96!2m2!1d-93.2920469!2d37.2072403!3e0?hl=en&authuser=0">205 E Walnut St Springfield, Missouri 65806 </a>| </p>
-        <p>(417) 831-3570 | </p>
-       <p>Site developed by<a href="http://www.faizanzkhan.com">   Faizan Khan</a></p>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-media">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                imgs/hero-shop-800.webp   800w,
+                imgs/hero-shop-1200.webp 1200w,
+                imgs/hero-shop.webp      2400w
+              "
+              sizes="100vw"
+            />
+            <img
+              src="imgs/hero-shop.jpg"
+              srcset="
+                imgs/hero-shop-800.jpg   800w,
+                imgs/hero-shop-1200.jpg 1200w,
+                imgs/hero-shop.jpg      2400w
+              "
+              sizes="100vw"
+              width="2400"
+              height="1447"
+              alt="Vintage barber chairs inside Walnut Street Barber Shop in downtown Springfield, Missouri"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+        <div class="hero-content container">
+          <p class="eyebrow">Downtown Springfield</p>
+          <h1 class="hero-title">Walnut Street<span>Barber Shop</span></h1>
+          <p class="hero-tagline">In Downtown Springfield Since 1943</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get Directions</a>
+            <a class="btn btn-outline" href="tel:+14178313570">Call Now</a>
+          </div>
+        </div>
+        <div class="hero-scroll">Walk-Ins Welcome</div>
+      </section>
+
+      <section class="intro">
+        <div class="container intro-grid">
+          <div id="hours" class="hours-card">
+            <h2>Hours</h2>
+            <div class="hours-row">
+              <span>Tuesday&ndash;Friday</span><span>7:30am&ndash;5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span>Saturday</span><span>7:30am&ndash;12:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span>Sunday&ndash;Monday</span><span>Closed</span>
+            </div>
+            <p class="hours-note">Walk-Ins Only</p>
+          </div>
+
+          <div class="learn-more">
+            <p class="eyebrow" style="color: var(--gold-dark)">Since 1943</p>
+            <h2>Come See What the Buzz Is About</h2>
+            <p>
+              Three chairs, a lot of history, and barbers who still take the
+              time to get your cut right &mdash; the same way it&rsquo;s been
+              done on Walnut Street for over 80 years.
+            </p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    imgs/business-card-700.webp  700w,
+                    imgs/business-card.webp     1200w
+                  "
+                  sizes="(min-width: 960px) 540px, 90vw"
+                />
+                <img
+                  src="imgs/business-card.jpg"
+                  srcset="
+                    imgs/business-card-700.jpg  700w,
+                    imgs/business-card.jpg     1200w
+                  "
+                  sizes="(min-width: 960px) 540px, 90vw"
+                  width="1200"
+                  height="566"
+                  loading="lazy"
+                  alt="Walnut Street Barber Shop business card"
+                />
+              </picture>
+            </figure>
+            <a class="btn btn-dark" href="about.html">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">What We Offer</p>
+            <h2 class="section-heading">Services</h2>
+          </div>
+
+          <div class="service-groups">
+            <div class="service-group">
+              <h3>Haircuts</h3>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Buzzcut</h4>
+                <p>
+                  Hair trimmed to 3/8 inch or less all over with clippers,
+                  includes tapering around neck and ears. Does not include
+                  fades, high-and-tights, &ldquo;leave the top alone&rdquo;
+                  cuts, undercuts or flat tops.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Regular Cut</h4>
+                <p>
+                  Clipper cut on sides and back. Clipper or shear cutting of the
+                  top. Top lengths of 4 inches or less.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Fade</h4>
+                <p>
+                  Standard, low, medium, or high zero fades. Top hair lengths of
+                  4 inches or less. Does not include Mohawk or Faux Hawk fades.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Specialty Cut</h4>
+                <p>
+                  Top lengths over 4 inches, side and back lengths over 1 inch,
+                  Mohawks, Faux Hawks, specialty mullets &amp; drastic fades.
+                  Any combination of clipper and/or shear cutting used at the
+                  barber&rsquo;s discretion.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-group">
+              <h3>Beard Trims</h3>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Short Beard / Goatee</h4>
+                <p>
+                  Freshening up of the jawline, neckline and overall shape of
+                  beard, goatee and mustache. Maintains an already established
+                  shape. Overall length no greater than 3/8 inch.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h4 class="service-item-head">Long Beard / Goatee</h4>
+                <p>
+                  Shaping of long beard, goatee and mustache. Establishing a
+                  jawline, neckline and mustache, with parts greater than 3/8
+                  inch. Specialty shaping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="barbers" class="barbers">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow" style="color: var(--gold-dark)">Meet The Team</p>
+            <h2 class="section-heading">Our Barbers</h2>
+          </div>
+
+          <div class="barber-grid">
+            <div class="barber-card">
+              <div class="barber-photo">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      imgs/barber-russell-420.webp 420w,
+                      imgs/barber-russell.webp     538w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                  />
+                  <img
+                    src="imgs/barber-russell.jpg"
+                    srcset="
+                      imgs/barber-russell-420.jpg 420w,
+                      imgs/barber-russell.jpg     538w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                    width="538"
+                    height="840"
+                    loading="lazy"
+                    alt="Russell, barber at Walnut Street Barber Shop"
+                  />
+                </picture>
+              </div>
+              <h3>Russell</h3>
+            </div>
+
+            <div class="barber-card">
+              <div class="barber-photo">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      imgs/barber-amy-420.webp 420w,
+                      imgs/barber-amy.webp     700w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                  />
+                  <img
+                    src="imgs/barber-amy.jpg"
+                    srcset="
+                      imgs/barber-amy-420.jpg 420w,
+                      imgs/barber-amy.jpg     700w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                    width="700"
+                    height="1125"
+                    loading="lazy"
+                    alt="Amy, barber at Walnut Street Barber Shop"
+                  />
+                </picture>
+              </div>
+              <h3>Amy</h3>
+            </div>
+
+            <div class="barber-card">
+              <div class="barber-photo">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      imgs/barber-jim-420.webp 420w,
+                      imgs/barber-jim.webp     700w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                  />
+                  <img
+                    src="imgs/barber-jim.jpg"
+                    srcset="
+                      imgs/barber-jim-420.jpg 420w,
+                      imgs/barber-jim.jpg     700w
+                    "
+                    sizes="(min-width: 960px) 350px, 45vw"
+                    width="700"
+                    height="974"
+                    loading="lazy"
+                    alt="Jim, barber at Walnut Street Barber Shop"
+                  />
+                </picture>
+              </div>
+              <h3>Jim</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <div class="container">
+          <p class="featured-label">As Featured In</p>
+          <div class="featured-logos">
+            <div class="featured-logo-chip">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="imgs/award-ozarks-alive.webp"
+                />
+                <img
+                  src="imgs/award-ozarks-alive.png"
+                  width="700"
+                  height="493"
+                  loading="lazy"
+                  alt="Ozarks Alive"
+                />
+              </picture>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="imgs/award-news-leader.webp" />
+              <img
+                src="imgs/award-news-leader.png"
+                width="500"
+                height="359"
+                loading="lazy"
+                alt="Springfield News-Leader"
+              />
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="imgs/award-417-magazine.webp" />
+              <img
+                src="imgs/award-417-magazine.png"
+                width="500"
+                height="497"
+                loading="lazy"
+                alt="417 Magazine"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-media">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                imgs/storefront-800.webp   800w,
+                imgs/storefront-1200.webp 1200w,
+                imgs/storefront.webp      2400w
+              "
+              sizes="100vw"
+            />
+            <img
+              src="imgs/storefront.jpg"
+              srcset="
+                imgs/storefront-800.jpg   800w,
+                imgs/storefront-1200.jpg 1200w,
+                imgs/storefront.jpg      2400w
+              "
+              sizes="100vw"
+              width="2400"
+              height="1350"
+              loading="lazy"
+              alt="Walnut Street Barber Shop storefront at the corner of Walnut and South, downtown Springfield, Missouri"
+            />
+          </picture>
+        </div>
+        <div class="contact-inner container">
+          <div class="contact-card">
+            <p class="eyebrow">Where To Find Us</p>
+            <h2>Visit The Shop</h2>
+            <p class="contact-detail">
+              <a
+                href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z"
+              >
+                205 E Walnut St, Springfield, MO 65806<br />(At the corner of
+                Walnut &amp; South)
+              </a>
+            </p>
+            <p class="contact-detail">
+              <a href="tel:+14178313570">(417) 831-3570</a>
+            </p>
+
+            <div class="contact-actions">
+              <a
+                class="btn btn-primary"
+                href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z"
+                >Get Directions</a
+              >
+              <a class="btn btn-outline" href="tel:+14178313570">Call Now</a>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/walnutstreetbarbershop/"
+                aria-label="Walnut Street Barber Shop on Facebook"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M13.5 21v-7.6h2.55l.38-2.96h-2.93V8.55c0-.86.24-1.44 1.47-1.44h1.57V4.46A21 21 0 0 0 14.1 4.3c-2.24 0-3.78 1.37-3.78 3.87v2.17H7.76v2.96h2.56V21h3.18Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/walnutstreetbarbershop/"
+                aria-label="Walnut Street Barber Shop on Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2.2c2.67 0 3 .01 4.05.06 1.05.05 1.77.22 2.4.46.65.25 1.2.6 1.75 1.14.5.5.85 1.1 1.14 1.75.24.63.4 1.35.46 2.4.05 1.05.06 1.38.06 4.05s-.01 3-.06 4.05c-.05 1.05-.22 1.77-.46 2.4a4.7 4.7 0 0 1-1.14 1.75c-.5.5-1.1.85-1.75 1.14-.63.24-1.35.4-2.4.46-1.05.05-1.38.06-4.05.06s-3-.01-4.05-.06c-1.05-.05-1.77-.22-2.4-.46a4.7 4.7 0 0 1-1.75-1.14 4.7 4.7 0 0 1-1.14-1.75c-.24-.63-.4-1.35-.46-2.4C2.21 15 2.2 14.67 2.2 12s.01-3 .06-4.05c.05-1.05.22-1.77.46-2.4.25-.65.6-1.2 1.14-1.75A4.7 4.7 0 0 1 5.6 2.66c.63-.24 1.35-.4 2.4-.46C9.05 2.15 9.38 2.14 12 2.14Zm0 1.98c-2.62 0-2.93.01-3.96.06-.86.04-1.32.18-1.63.3-.41.16-.7.35-1.01.66-.31.31-.5.6-.66 1.01-.12.31-.26.77-.3 1.63-.05 1.03-.06 1.34-.06 3.96s.01 2.93.06 3.96c.04.86.18 1.32.3 1.63.16.41.35.7.66 1.01.31.31.6.5 1.01.66.31.12.77.26 1.63.3 1.03.05 1.34.06 3.96.06s2.93-.01 3.96-.06c.86-.04 1.32-.18 1.63-.3.41-.16.7-.35 1.01-.66.31-.31.5-.6.66-1.01.12-.31.26-.77.3-1.63.05-1.03.06-1.34.06-3.96s-.01-2.93-.06-3.96c-.04-.86-.18-1.32-.3-1.63a2.7 2.7 0 0 0-.66-1.01 2.7 2.7 0 0 0-1.01-.66c-.31-.12-.77-.26-1.63-.3-1.03-.05-1.34-.06-3.96-.06Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 1.98a2.47 2.47 0 1 0 0 4.94 2.47 2.47 0 0 0 0-4.94Zm4.63-2.19a1.04 1.04 0 1 1 0 2.08 1.04 1.04 0 0 1 0-2.08Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          205 E Walnut St, Springfield, MO 65806 &middot;
+          <a href="tel:+14178313570">(417) 831-3570</a>
+        </p>
+        <p class="footer-credit">
+          &copy; <span id="year">2026</span> Walnut Street Barber Shop &middot;
+          Site by <a href="http://www.faizanzkhan.com">Faizan Khan</a>
+        </p>
+      </div>
     </footer>
-</body>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+    <script src="js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+  </body>
 </html>
